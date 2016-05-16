@@ -22,24 +22,24 @@ values
 ('Foro Griego', , );
 
 /* Existen 5 usuarios random y nosotros, como administradores de la aplicacion*/
-insert into Usuario (id_tipoestado, nombre_usuario, correo_usuario, carrera_usuario, contrasenha_usuario, esAdministrador?)
+insert into Usuario (id_tipoestado, nombre_usuario, apellido_usuario, correo_usuario, carrera_usuario, contrasenha_usuario, esAdministrador_)
 values
-(1, 'Jonathan Simpson', 'jsimpson0@ebay.com', 'Administrative Officer', 'usach', false),
-(1, 'Dennis Cooper', 'dcooper1@abc.net.au', 'Software Consultant', 'usach', false),
-(1, 'Steve Welch', 'swelch2@wufoo.com', 'Software Consultant', 'usach', false),
-(1, 'Judy Price', 'jprice3@canalblog.com', 'Editor', 'usach', false),
-(1, 'Robert Foster', 'rfoster4@is.gd', 'Marketing Manager', 'usach', false),
-(1, 'Pablo Ulloa', 'pablo.ulloa@usach.cl', 'Ingeniería Ejecución en Informática', 'hola123', true),
-(1, 'Francisco Lopez', 'francisco.lopez.a@usach.cl', 'Ingeniería Ejecución en Informática', 'hola123', true),
-(1, 'Dania Montanares', 'dania.montanares@usach.cl', 'Ingeniería Civil en Informática', 'hola123', true),
-(1, 'Fabian Ramirez', 'fabian.ramirezr@usach.cl', 'Ingeniería Ejecución en Informática', 'hola123', true),
-(1, 'Bastian Toro', 'bastian.toro@usach.cl', 'Ingeniería Civil en Informática', 'hola123', true);
+(1, 'Jonathan', 'Simpson', 'jsimpson0@ebay.com', 'Administrative Officer', 'usach', false),
+(1, 'Dennis', 'Cooper', 'dcooper1@abc.net.au', 'Software Consultant', 'usach', false),
+(1, 'Steve', 'Welch', 'swelch2@wufoo.com', 'Software Consultant', 'usach', false),
+(1, 'Judy', 'Price', 'jprice3@canalblog.com', 'Editor', 'usach', false),
+(1, 'Robert', 'Foster', 'rfoster4@is.gd', 'Marketing Manager', 'usach', false),
+(1, 'Pablo', 'Ulloa', 'pablo.ulloa@usach.cl', 'Ingeniería Ejecución en Informática', 'hola123', true),
+(1, 'Francisco', 'Lopez', 'francisco.lopez.a@usach.cl', 'Ingeniería Ejecución en Informática', 'hola123', true),
+(1, 'Dania', 'Montanares', 'dania.montanares@usach.cl', 'Ingeniería Civil en Informática', 'hola123', true),
+(1, 'Fabian', 'Ramirez', 'fabian.ramirezr@usach.cl', 'Ingeniería Ejecución en Informática', 'hola123', true),
+(1, 'Bastian', 'Toro', 'bastian.toro@usach.cl', 'Ingeniería Civil en Informática', 'hola123', true);
 
 /* Usuarios que se siguen entre sí */
 insert into UsuarioSeguidos ()
 values
-(), /* no se como se colocan */
-();
+(1, 2), /* no se como se colocan */
+(2, 4);
 
 /* Preferencias que tiene un usuario en base al tipo de eventos que existen */
 insert into Preferencias (id_tipo, id_usuario)
@@ -55,10 +55,10 @@ values
 (2, 5);
 
 /* Evento culturales o artisticos que existen en la u */
-insert into Evento (id_lugar, id_tipo, id_usuario, titulo_evento, inicio_evento, fin_evento, fecha_evento, publico_objetivo, descripcion_evento)
+insert into Evento (id_lugar, id_tipo, id_usuario, titulo_evento, inicio_evento, fin_evento, fecha_evento, descripcion_evento)
 values
-(1, 1, 9, 'Orquesta sinfónica Usach', '19:00:00', '21:00:00', '2016/05/23', 'Esto va orientado para los amantes de la musica (?)', 'Concierto de la orquesta sinfonica de la usach para darse a conocer al estudiantado y presentar sus nuevas melodias (?).'),
-(3, 3, 6, 'Nuevos profesionales de la Informática', '19:00:00', '21:00:00', '2016/05/26', 'Esto va orientado para los que quieren ver como se titulan (?)', 'Ceremonia de titulacion donde se presentaran a los nuevos profesionales del futuro.(?)');
+(1, 1, 9, 'Orquesta sinfónica Usach', '19:00:00', '21:00:00', '2016/05/23', 'Concierto de la orquesta sinfonica de la usach para darse a conocer al estudiantado y presentar sus nuevas melodias (?).'),
+(3, 3, 6, 'Nuevos profesionales de la Informática', '19:00:00', '21:00:00', '2016/05/26', 'Ceremonia de titulacion donde se presentaran a los nuevos profesionales del futuro.(?)');
 
 /* tabla intermedia de los eventos, ya que un usuario puede asistir a más de un evento y a un evento pueden asistir muchos usuarios */
 insert into EventoUsuario (id_evento, id_usuario)

@@ -1,9 +1,11 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     16/05/2016 2:25:08                           */
+/* Created on:     16/05/2016 16:43:50                          */
 /*==============================================================*/
+create database eusach;
+use database eusach;
 
-
+/* esto se utiliza cuando ya tienes tablas creadas, osea los DROP*/
 drop table if exists COMENTARIO;
 
 drop table if exists EVENTO;
@@ -48,7 +50,6 @@ create table EVENTO
    INICIO_EVENTO        time,
    FIN_EVENTO           time,
    FECHA_EVENTO         date,
-   PUBLICO_OBJETIVO     varchar(50),
    DESCRIPCION_EVENTO   text,
    primary key (ID_EVENTO)
 );
@@ -84,6 +85,7 @@ create table PREFERENCIAS
    ID_PREFERENCIA       int not null auto_increment,
    ID_TIPO              int not null,
    ID_USUARIO           int not null,
+   NOMBRE_PREFERENCIA   varchar(50),
    primary key (ID_PREFERENCIA)
 );
 
@@ -117,6 +119,7 @@ create table USUARIO
    ID_USUARIO           int not null auto_increment,
    ID_TIPOESTADO        int not null,
    NOMBRE_USUARIO       varchar(50),
+   APELLIDO_USUARIO     varchar(50),
    CORREO_USUARIO       varchar(50),
    CARRERA_USUARIO      varchar(50),
    CONTRASENHA_USUARIO  varchar(50),
