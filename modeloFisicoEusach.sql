@@ -2,8 +2,9 @@
 /* DBMS name:      MySQL 5.0                                    */
 /* Created on:     16/05/2016 16:43:50                          */
 /*==============================================================*/
+/*esto es para los que no han creado la base de datos */
 create database eusach;
-use database eusach;
+use eusach;
 
 /* esto se utiliza cuando ya tienes tablas creadas, osea los DROP*/
 drop table if exists COMENTARIO;
