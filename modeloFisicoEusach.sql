@@ -73,8 +73,8 @@ create table LUGAR
 (
    ID_LUGAR             int not null auto_increment,
    NOMBRE_LUGAR         varchar(50),
-   COORDENADA_X         float,
-   COORDENADA_Y         float,
+   LATITUD         float,
+   LONGITUD         float,
    primary key (ID_LUGAR)
 );
 

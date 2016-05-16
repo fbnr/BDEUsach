@@ -16,10 +16,10 @@ values
 /* Distintos lugares de la universidad donde se hacen cosas culturales y artisticas */
 insert into Lugar (nombre_lugar, coordenada_x, coordenada_y)
 values
-('Aula Magna', , ), /*falta agregar las coordenadas de los lugares */
-('Cite-Camp', , ),
-('Departamento de Ingeniería en Informática', , ),
-('Foro Griego', , );
+('Aula Magna', -33.449942, -70.686613), /*falta agregar las coordenadas de los lugares */
+('Cite-Camp', -33.446334, -70.683219),
+('Departamento de Ingeniería en Informática', -33.449742, -70.687213),
+('Salon Victor Jara', -33.450082, -70.685113);
 
 /* Existen 5 usuarios random y nosotros, como administradores de la aplicacion*/
 insert into Usuario (id_tipoestado, nombre_usuario, apellido_usuario, correo_usuario, carrera_usuario, contrasenha_usuario, esAdministrador_)
