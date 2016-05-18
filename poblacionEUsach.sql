@@ -14,7 +14,7 @@ values
 ('Exposición', 'Exposición donde una persona expone un tema de investigación de mucha experiencia para él.');
 
 /* Distintos lugares de la universidad donde se hacen cosas culturales y artisticas */
-insert into Lugar (nombre_lugar, coordenada_x, coordenada_y)
+insert into Lugar (nombre_lugar, latitud, longitud)
 values
 ('Aula Magna', -33.449942, -70.686613), /*falta agregar las coordenadas de los lugares */
 ('Cite-Camp', -33.446334, -70.683219),
