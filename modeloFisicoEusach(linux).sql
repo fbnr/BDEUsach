@@ -85,7 +85,6 @@ create table preferencias
    id_preferencia       int not null auto_increment,
    id_tipo              int not null,
    id_usuario           int not null,
-   nombre_preferencia   varchar(50),
    primary key (id_preferencia)
 );
  

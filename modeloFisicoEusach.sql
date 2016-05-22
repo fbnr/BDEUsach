@@ -1,8 +1,9 @@
 /*==============================================================*/
 /* DBMS name:      MySQL 5.0                                    */
-/* Created on:     22/05/2016 2:31:06                           */
+/* Created on:     22/05/2016 2:43:51                           */
 /*==============================================================*/
-
+create database eusach;
+use eusach;
 
 drop table if exists COMENTARIO;
 
@@ -82,7 +83,6 @@ create table PREFERENCIAS
    ID_PREFERENCIA       int not null auto_increment,
    ID_TIPO              int not null,
    ID_USUARIO           int not null,
-   NOMBRE_PREFERENCIA   varchar(50),
    primary key (ID_PREFERENCIA)
 );
 
