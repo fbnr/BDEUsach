@@ -55,10 +55,10 @@ values
 (2, 5);
 
 /* Evento culturales o artisticos que existen en la u */
-insert into evento (id_lugar, id_tipo, id_usuario, titulo_evento, inicio_evento, fin_evento, fecha_evento, descripcion_evento)
+insert into evento (id_lugar, id_tipo, id_usuario, titulo_evento, inicio_evento, fin_evento, descripcion_evento)
 values
-(1, 1, 9, 'Orquesta sinfónica Usach', '19:00:00', '21:00:00', '2016/05/23', 'Concierto de la orquesta sinfonica de la usach para darse a conocer al estudiantado y presentar sus nuevas melodias (?).'),
-(3, 3, 6, 'Nuevos profesionales de la Informática', '19:00:00', '21:00:00', '2016/05/26', 'Ceremonia de titulacion donde se presentaran a los nuevos profesionales del futuro.(?)');
+(1, 1, 9, 'Orquesta sinfónica Usach', '2016/05/23 19:00:00', '2016/05/23 21:00:00', 'Concierto de la orquesta sinfonica de la usach para darse a conocer al estudiantado y presentar sus nuevas melodias (?).'),
+(3, 3, 6, 'Nuevos profesionales de la Informática', '2016/05/26 19:00:00', '2016/05/26 21:00:00', 'Ceremonia de titulacion donde se presentaran a los nuevos profesionales del futuro.(?)');
 
 /* tabla intermedia de los eventos, ya que un usuario puede asistir a más de un evento y a un evento pueden asistir muchos usuarios */
 insert into eventousuario (id_evento, id_usuario)

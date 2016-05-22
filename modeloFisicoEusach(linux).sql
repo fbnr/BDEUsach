@@ -48,9 +48,8 @@ create table evento
    id_tipo              int not null,
    id_usuario           int not null,
    titulo_evento        varchar(50),
-   inicio_evento        time,
-   fin_evento           time,
-   fecha_evento         date,
+   inicio_evento        datetime,
+   fin_evento           datetime,
    descripcion_evento   text,
    primary key (id_evento)
 );
