@@ -51,6 +51,7 @@ create table evento
    inicio_evento        datetime,
    fin_evento           datetime,
    descripcion_evento   text,
+   habilitado_     bool,
    primary key (id_evento)
 );
  

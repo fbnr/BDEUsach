@@ -49,6 +49,7 @@ create table EVENTO
    INICIO_EVENTO        datetime,
    FIN_EVENTO           datetime,
    DESCRIPCION_EVENTO   text,
+   HABILITADO_     bool,
    primary key (ID_EVENTO)
 );
 
